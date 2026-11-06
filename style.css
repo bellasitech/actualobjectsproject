@@ -1,11 +1,25 @@
 
 .card {
     height: 300px;
-    width:250px;
+    width:200px;
     background-color: #7398e9;
-}
-
-#headerarea {
-    width:1000px;
+    font-family: "DotGothic16", sans-serif;
     
 }
+body {
+    font-family: "DotGothic16", sans-serif;
+}
+
+#main {
+    height:800px;
+}
+:root {
+     --header-image: url('')
+     --body-bg-image: url('https://i.postimg.cc/3RSMkg9Z/dap3uo5-1a187bcb-9640-4fa7-9647-33b291b5d67a.png');
+     }
+.dotgothic16-regular {
+            font-family: "DotGothic16", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+   
