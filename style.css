@@ -1,29 +1,42 @@
 
 .card {
-    height: 300px;
-    width:200px;
-    background-color: #7398e9;
+    height:250px;
+    width:260px;
+    margin:20px;
+    background-color: hsl(221, 88%, 52%);
     font-family: "DotGothic16", sans-serif;
+
     
+}
+#container {
+    max-width: 800px;
 }
 body {
     font-family: "DotGothic16", sans-serif;
     background-color: #a7aaaf;
 }
+.image {
+    height:150px;
+    width:225px;
+    position:center;
+    margin:15px;
+    background-color: #a7aaaf;
 
-#header {
-    background-image: var(--header-image);
-    height:65px;
-    padding-bottom: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+}
+.button {
+    height:40px;
+    width: 225px;
+    position: center;
+    margin:15px;
+    text-align: center;
+    font-size: large;
+    background-color: hsl(221, 92%, 39%);
 }
 
+.flex {
+    display: flex;
+        }
 
-#main {
-    height:800px;
-}
 :root {
      --header-image: url('https://i.postimg.cc/PJLFKX91/tumblr-0eb8bc812c5c551295ad9da078f08ce1-59b2183f-1280-(1).jpg');
      --body-bg-image: url('https://i.postimg.cc/3RSMkg9Z/dap3uo5-1a187bcb-9640-4fa7-9647-33b291b5d67a.png');
