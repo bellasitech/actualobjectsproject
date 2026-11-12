@@ -1,5 +1,7 @@
+import "/.style.css";
+
 const characters = [
-    { name: "Melanie", media: "Regretevator", species: "Tv Head", gender: "Girl", pronouns: "She/they", age: "Young adult", isOC: false, cost: 15 },
+    { name: "Melanie", media: "Regretevator", species: "Tv Head", gender: "Girl", pronouns: "She/they", age: "Young adult", isOC: false, cost: 15.  },
     { name: "Battat", media: "Deltarune", species: "Die", gender: "Guy", pronouns: "He/him", age: "Adult", isOC: false, cost: 12 },
     { name: "Scag", media: "Regretevator", species: "Computer", gender: "Girl", pronouns: "She/they", age: "Adult", isOC: false, cost: 13 },
     { name: "Kris", media: "Deltarune", species: "Human", gender: "Non-binary", pronouns: "They/them", age: "Teen", isOC: false, cost: 13  },
@@ -21,6 +23,40 @@ const characters = [
     { name: "Kagamine Rin", media: "Vocal Synth", species: "Human", gender: "Girl", age: "Young adult", isOC: false, cost: 15 },
 ];
 
+const container = document.querySelector(".card-container");
+
+characters.forEach((item) => {
+  container.insertAdjacentHTML(
+    "beforeend"
+    ` <div class ="card"${
+      character.media
+    }
+
+    
+    
+    
+    
+    
+    `
+
+  )
+    
+
+
+
+
+
+
+
+
+
+
+
+
+function findName(characters, targetname) {
+  const foundCharacter = characters.find((character) => character.name = targetname )
+  return foundCharacter.name;
+  }
 function FiltersMedia(characters, search) {
   const filterCharacter = characters.filter((character)=> character.media === search);
   return filterCharacter; 
