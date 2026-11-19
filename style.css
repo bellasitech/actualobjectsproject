@@ -9,9 +9,12 @@
     border-width: 2px;
     border-color: hsl(221, 92%, 39%);
     background-color: hsl(221, 88%, 52%);
-    font-family: "DotGothic16", sans-serif;
+    font-family: "DotGothic16", sans-serif
+}
 
-    
+.card-title {
+    font-family: "DotGothic16", sans-serif;
+    font-size: large;
 }
 #container {
     max-width: 800px;
@@ -25,8 +28,6 @@ body {
     width:225px;
     position:center;
     margin:15px;
-    
-
 }
 .button {
     height:40px;
