@@ -1,4 +1,4 @@
-import "./style.css";
+
 console.log("test");
 const characters = [
     { name: "Melanie", media: "Regretevator", alt: "melanie drawing", image: "Girl", cost: 15.  },
@@ -23,29 +23,19 @@ const characters = [
     { name: "Kagamine Rin", media: "Vocal Synth", alt: "rin drawing", image: "Girl",   cost: 15 },
 ];
 
-const container = document.querySelector("container");
 
+const container = document.querySelector(".container");
 characters.forEach((character) => {
   container.insertAdjacentHTML(
     "beforeend",
     ` 
-      <div class ="card"${
-        character.media
-        }" data-title="${character.name}">
-          <figure>
-            <img
-              class="image"
-              src="${character.image}"
-              alt="${character.alt}"
-            />
-          </figure>
-        <div class="card">
-            <h2 class="card-title">${character.name}</h2>
-            <p>$${character.cost.toFixed(2)}</p>
-            <div class="card">
-              <button class="button">add to cart</button>
-          </div>
-        </div>
+      <div class ="card">
+        <h2 class ="card-title">${character.name}</h2>
+        <figure>
+          <img class="image" src="${character.image}" alt="${character.alt}">
+        </figure>
+        <button class="button"> add to cart </button>
+        <p class ="card-price">${character.cost}</p>
       </div>
     `
   );
