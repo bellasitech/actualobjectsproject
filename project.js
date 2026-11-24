@@ -1,5 +1,5 @@
 
-console.log("test");
+
 const characters = [
     { name: "Melanie", media: "Regretevator", alt: "melanie drawing", image: "Girl", cost: 15.  },
     { name: "Battat", media: "Deltarune", alt: "battat drawing", gender: "Guy",  cost: 12 },
@@ -24,22 +24,23 @@ const characters = [
 ];
 
 
-const container = document.querySelector(".container");
-characters.forEach((character) => {
-  container.insertAdjacentHTML(
-    "beforeend",
-    ` 
-      <div class ="card">
-        <h2 class ="card-title">${character.name}</h2>
-        <figure>
-          <img class="image" src="${character.image}" alt="${character.alt}">
-        </figure>
-        <button class="button"> add to cart </button>
-        <p class ="card-price">${character.cost}</p>
-      </div>
-    `
-  );
-});
+const container = document.querySelector(".flex");
+  characters.forEach((character) => {
+    container.insertAdjacentHTML(
+      "afterbegin",
+      ` 
+        <div class ="card">
+          <h2 class ="card-title">${character.name}</h2>
+          <figure>
+            <img class="image" src="${character.image}" alt="${character.alt}">
+          </figure>
+          <button class="button"> add to cart </button>
+          <p class ="card-price">${character.cost}</p>
+        </div>
+      `
+    );
+  });
+
 
 
 

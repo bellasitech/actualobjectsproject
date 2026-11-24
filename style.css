@@ -19,6 +19,7 @@
 }
 #container {
     max-width: 800px;
+    
 }
 body {
     font-family: "DotGothic16", sans-serif;
@@ -50,7 +51,10 @@ body {
 
 .flex {
     display: flex;
-        }
+    flex-direction: row;
+    width: 1300px;
+    flex-wrap: wrap;
+    }
 
 :root {
      --header-image: url('https://i.postimg.cc/PJLFKX91/tumblr-0eb8bc812c5c551295ad9da078f08ce1-59b2183f-1280-(1).jpg');
