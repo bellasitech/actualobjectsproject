@@ -35,7 +35,7 @@ const container = document.querySelector(".flex");
             <img class="image" src="${character.image}" alt="${character.alt}">
           </figure>
           <button class="button"> add to cart </button>
-          <p class ="card-price">${character.cost}</p>
+          <p class ="card-price">$${character.cost}</p>
         </div>
       `
     );

@@ -1,7 +1,7 @@
 
 .card {
-    height:250px;
-    width:260px;
+    height:20%;
+    width: 15%;
     border-style: dashed;
     margin: 20px;
     border-radius: 5px;
@@ -18,28 +18,35 @@
     font-size: medium;
 }
 #container {
-    max-width: 800px;
+    position: static;
     
+    
+}
+#banner {
+    background-color: hsl(221, 88%, 52%);
+    height: 50px;
+    position: top;
+    text-align: center;
 }
 body {
     font-family: "DotGothic16", sans-serif;
     background-color: #a7aaaf;
+    
 }
 .image {
-    height:100px;
-    width:200px;
+    height: 40%;
+    width:90%;
     position:center;
     margin-left:8px;
 }
 .card-price {
-    font-size: small;
+    font-size: medium;
     
 }
 .button {
-    height:40px;
-    width: 225px;
+    height: 20%;
+    width: 80%;
     position: center;
-    margin-left:9px;
     margin-top: 9px;
     border-width: 2px;
     border-color: hsl(221, 92%, 39%);
@@ -51,8 +58,10 @@ body {
 
 .flex {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    width: 1300px;
+    position: relative;
+    justify-content: center;
     flex-wrap: wrap;
     }
 
